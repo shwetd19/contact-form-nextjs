@@ -61,8 +61,10 @@ export default function Home() {
   };
 
   return (
-    <Container maxW="450px" mt={12}>
-      <Heading>Contact</Heading>
+    <Container maxW="750px" mt={12}>
+      <Heading>How can I help?</Heading>
+      <FormLabel mt={10}>Do you have a question or are you interested in working with my team and me?
+Just fill out the form fields below.</FormLabel>
       {error && (
         <Text color="red.300" my={4} fontSize="xl">
           {error}
@@ -70,7 +72,7 @@ export default function Home() {
       )}
 
       <FormControl isRequired isInvalid={touched.name && !values.name} mb={5}>
-        <FormLabel>Name</FormLabel>
+        <FormLabel mt={6}>Name</FormLabel>
         <Input
           type="text"
           name="name"
